@@ -1,0 +1,263 @@
+ PS C:\Users\ACER\finalproject_DistributedParallelSystem> python analysis_sequential.py
+
+--- Machine Specifications ---
+Processor: Intel64 Family 6 Model 170 Stepping 4, GenuineIntel
+Total RAM: 31.71 GB
+--------------------------
+
+Attempting to load data from: train.csv
+
+--- Initial Dataset Information ---
+
+Data count before cleaning: 1458644
+Data count after cleaning: 1447806
+
+Successfully loaded and cleaned 1447806 trip duration records.
+
+--- Starting Sequential Analysis ---
+
+--- Processing 25% of data (361951 records) ---
+Sequential Sort took: 0.0510 seconds.
+Sequential Filter took: 0.0071 seconds. Found 102987 records > 1000.
+
+--- Processing 50% of data (723903 records) ---
+Sequential Sort took: 0.1034 seconds.
+Sequential Filter took: 0.0163 seconds. Found 205955 records > 1000.
+
+--- Processing 75% of data (1085854 records) ---
+Sequential Sort took: 0.1574 seconds.
+Sequential Filter took: 0.0248 seconds. Found 308598 records > 1000.
+
+--- Processing 100% of data (1447806 records) ---
+Sequential Sort took: 0.2229 seconds.
+Sequential Filter took: 0.0345 seconds. Found 411516 records > 1000.
+
+--- Summary of Sequential Performance ---
+      Sequential Sort  Sequential Filter
+25%          0.050997           0.007101
+50%          0.103358           0.016343
+75%          0.157434           0.024794
+100%         0.222939           0.034542
+
+Next step: Implement Thread and Multiprocessing analysis.
+
+
+
+
+
+
+
+PS C:\Users\ACER\finalproject_DistributedParallelSystem> python analysis_sequantial_multiprocessing.py
+
+--- Machine Specifications ---
+Processor: Intel64 Family 6 Model 170 Stepping 4, GenuineIntel
+Total RAM: 31.71 GB
+--------------------------
+
+Attempting to load data from: train.csv
+
+--- Initial Dataset Information ---
+
+Data count before cleaning: 1458644
+Data count after cleaning: 1447806
+
+Successfully loaded and cleaned 1447806 trip duration records.
+
+--- Starting Sequential Analysis ---
+
+--- Processing 25% of data (361951 records) ---
+Sequential Sort took: 0.0526 seconds.
+Sequential Filter took: 0.0068 seconds. Found 102987 records > 1000.
+
+--- Processing 50% of data (723903 records) ---
+Sequential Sort took: 0.1025 seconds.
+Sequential Filter took: 0.0175 seconds. Found 205955 records > 1000.
+
+--- Processing 75% of data (1085854 records) ---
+Sequential Sort took: 0.1597 seconds.
+Sequential Filter took: 0.0258 seconds. Found 308598 records > 1000.
+
+--- Processing 100% of data (1447806 records) ---
+Sequential Sort took: 0.2127 seconds.
+Sequential Filter took: 0.0326 seconds. Found 411516 records > 1000.
+
+--- Summary of Sequential Performance ---
+      Sequential Sort  Sequential Filter
+25%          0.052598           0.006759
+50%          0.102529           0.017505
+75%          0.159697           0.025762
+100%         0.212658           0.032592
+
+Next step: Implement Thread and Multiprocessing analysis.
+
+
+
+
+
+
+PS C:\Users\ACER\finalproject_DistributedParallelSystem> python analysis_sequantial_multiprocessing_threading.py
+
+--- Machine Specifications ---
+Processor: Intel64 Family 6 Model 170 Stepping 4, GenuineIntel
+Total RAM: 31.71 GB
+CPU Cores: 18
+--------------------------
+
+Attempting to load data from: train.csv
+
+--- Initial Dataset Information ---
+
+Data count before cleaning: 1458644
+Data count after cleaning: 1447806
+
+Successfully loaded and cleaned 1447806 trip duration records.
+
+--- Processing 25% of data (361951 records) ---
+Sequential Sort took: 0.0474 seconds.
+Sequential Filter took: 0.0064 seconds.
+Multiprocessing Sort took: 1.7511 seconds.
+Multiprocessing Filter took: 1.5718 seconds.
+
+--- Processing 50% of data (723903 records) ---
+Sequential Sort took: 0.1057 seconds.
+Sequential Filter took: 0.0167 seconds.
+Multiprocessing Sort took: 1.7078 seconds.
+Multiprocessing Filter took: 1.6848 seconds.
+
+--- Processing 75% of data (1085854 records) ---
+Sequential Sort took: 0.1657 seconds.
+Sequential Filter took: 0.0272 seconds.
+Multiprocessing Sort took: 1.9310 seconds.
+Multiprocessing Filter took: 1.7006 seconds.
+
+--- Processing 100% of data (1447806 records) ---
+Sequential Sort took: 0.2333 seconds.
+Sequential Filter took: 0.0332 seconds.
+Multiprocessing Sort took: 2.1620 seconds.
+Multiprocessing Filter took: 1.7778 seconds.
+
+--- Summary of Performance ---
+      Sequential Sort  Sequential Filter  Multiprocessing Sort  Multiprocessing Filter
+25%          0.047425           0.006434              1.751107                1.571790
+50%          0.105745           0.016749              1.707815                1.684804
+75%          0.165713           0.027204              1.931034                1.700625
+100%         0.233285           0.033212              2.161994                1.777838
+
+Next step: Implement Threading analysis and finalize the report.
+
+
+
+
+
+
+
+
+PS C:\Users\ACER\finalproject_DistributedParallelSystem> python analysis.py
+
+--- Machine Specifications ---
+Processor: Intel64 Family 6 Model 170 Stepping 4, GenuineIntel
+Total RAM: 31.71 GB
+CPU Cores: 18
+--------------------------
+
+Attempting to load data from: train.csv
+
+--- Initial Dataset Information ---
+
+Data count before cleaning: 1458644
+Data count after cleaning: 1447806
+
+Successfully loaded and cleaned 1447806 trip duration records.
+
+--- Processing 25% of data (361951 records) ---
+Sequential Sort took: 0.0475 seconds.
+Sequential Filter took: 0.0065 seconds.
+Multiprocessing Sort took: 1.7647 seconds.
+Multiprocessing Filter took: 1.6319 seconds.
+
+--- Processing 50% of data (723903 records) ---
+Sequential Sort took: 0.1054 seconds.
+Sequential Filter took: 0.0192 seconds.
+Multiprocessing Sort took: 1.8761 seconds.
+Multiprocessing Filter took: 1.6399 seconds.
+
+--- Processing 75% of data (1085854 records) ---
+Sequential Sort took: 0.1795 seconds.
+Sequential Filter took: 0.0276 seconds.
+Multiprocessing Sort took: 1.9675 seconds.
+Multiprocessing Filter took: 1.7318 seconds.
+
+--- Processing 100% of data (1447806 records) ---
+Sequential Sort took: 0.2281 seconds.
+Sequential Filter took: 0.0343 seconds.
+Multiprocessing Sort took: 2.1321 seconds.
+Multiprocessing Filter took: 1.7358 seconds.
+
+--- Summary of Performance ---
+      Sequential Sort  Sequential Filter  Multiprocessing Sort  Multiprocessing Filter
+25%          0.047455           0.006514              1.764710                1.631883
+50%          0.105376           0.019215              1.876124                1.639928
+75%          0.179450           0.027616              1.967489                1.731774
+100%         0.228054           0.034275              2.132130                1.735782
+
+Next step: Implement Threading analysis and finalize the report.
+
+
+
+
+PS C:\Users\ACER\finalproject_DistributedParallelSystem> python analysis.py
+
+--- Machine Specifications ---
+Processor: Intel64 Family 6 Model 170 Stepping 4, GenuineIntel
+Total RAM: 31.71 GB
+CPU Cores: 18
+--------------------------
+
+Attempting to load data from: train.csv
+
+Data count before cleaning: 1458644
+Data count after cleaning: 1447806
+
+Successfully loaded and cleaned 1447806 trip duration records.
+
+--- Processing 25% of data (361951 records) ---
+Sequential Sort took: 0.0516 seconds.
+Sequential Filter took: 0.0069 seconds.
+Multiprocessing Sort took: 1.6866 seconds.
+Multiprocessing Filter took: 1.5125 seconds.
+Threading Sort took: 0.1463 seconds.
+Threading Filter took: 0.0138 seconds.
+
+--- Processing 50% of data (723903 records) ---
+Sequential Sort took: 0.1000 seconds.
+Sequential Filter took: 0.0153 seconds.
+Multiprocessing Sort took: 1.7628 seconds.
+Multiprocessing Filter took: 1.5635 seconds.
+Threading Sort took: 0.3041 seconds.
+Threading Filter took: 0.0270 seconds.
+
+--- Processing 75% of data (1085854 records) ---
+Sequential Sort took: 0.1550 seconds.
+Sequential Filter took: 0.0300 seconds.
+Multiprocessing Sort took: 1.7998 seconds.
+Multiprocessing Filter took: 1.6272 seconds.
+Threading Sort took: 0.4700 seconds.
+Threading Filter took: 0.0420 seconds.
+
+--- Processing 100% of data (1447806 records) ---
+Sequential Sort took: 0.2128 seconds.
+Sequential Filter took: 0.0322 seconds.
+Multiprocessing Sort took: 2.0390 seconds.
+Multiprocessing Filter took: 1.7257 seconds.
+Threading Sort took: 0.6370 seconds.
+Threading Filter took: 0.0550 seconds.
+
+--- FINAL SUMMARY OF PERFORMANCE (in seconds) ---
+      Sequential Sort  Sequential Filter  Multiprocessing Sort  Multiprocessing Filter  Threading Sort  Threading Filter
+25%          0.051612           0.006884              1.686560                1.512455        0.146256          0.013848
+50%          0.100031           0.015321              1.762844                1.563474        0.304074          0.026984
+75%          0.155032           0.029954              1.799845                1.627207        0.470011          0.042036
+100%         0.212816           0.032166              2.039041                1.725695        0.637032          0.055042
+
+All analyses are complete. You can now use these results for your report.
+PS C:\Users\ACER\finalproject_DistributedParallelSystem>
